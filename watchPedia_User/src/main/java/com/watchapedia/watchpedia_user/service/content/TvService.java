@@ -189,8 +189,6 @@ public class TvService {
         }
         return result;
     }
-
-
     //----------------------------------------------------------------------------------------------------
 
     @Transactional(readOnly = true)

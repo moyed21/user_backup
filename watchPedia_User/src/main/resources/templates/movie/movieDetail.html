@@ -6945,12 +6945,7 @@
         .css-cwsoc3 {
             padding: 5px 0px;
         }
-        #css-fxxino2{
-            display: none;
-        }
-        #css-fxxino1{
-            display: none;
-        }
+
         .css-1qmg4jw {
             display: block;
             border-right: none;
@@ -7259,12 +7254,7 @@
         .css-cwsoc3 {
             padding: 5px 0px;
         }
-        #css-fxxino2{
-            display: none;
-        }
-        #css-fxxino1{
-            display: none;
-        }
+
         .css-1qmg4jw {
             display: block;
             border-right: none;
@@ -7288,36 +7278,7 @@
         }
     </style>
     <!--jquery + javascript-->
-    <script type="text/javascript">
-        $(function(){
-            $("#input_text").on('input',function(){
-                if($("#input_text").val()==''){
-                    $("#css-fxxino1").attr("style","display:block");
-                    $("#css-fxxino2").attr("style","display:none");
-                    $("#css-fxxino2").removeAttr("style").hide();
-                }
-                else{
-                    $("#css-fxxino1").removeAttr("style").hide();
-                    $("#css-fxxino2").show();
-                }
-            });
-            $("#input_text").on('focus',function(){
-                if($("#input_text").val()==''){
-                    $("#css-fxxino1").attr("style","display:block");
-                    $("#css-fxxino2").attr("style","display:none");
-                    $("#css-fxxino2").removeAttr("style").hide();
-                }
-                else{
-                    $("#css-fxxino1").removeAttr("style").hide();
-                    $("#css-fxxino2").show();
-                }
-            });
-            $("#input_text").on('focusout',function(){
-                $("#css-fxxino1").removeAttr("style").hide();
-                $("#css-fxxino2").removeAttr("style").hide();
-            });
-        })
-    </script>
+
 
     <!-- 코멘트 등록했을 경우 -->
     <style>
@@ -10081,7 +10042,7 @@
                         </div>
                         <footer class="css-wfb65d-Self e19unuxw0">
                             <section class="css-1iuqns0-StyledFooterTopSection e19unuxw1"><span
-                                    class="css-z9tuc7-StyledRatingSummary e19unuxw2">지금까지 <em>★ 677,813,452 개의 평가가 </em>쌓였어요.</span>
+                                    class="css-z9tuc7-StyledRatingSummary e19unuxw2">지금까지 <em th:text="|★ ${totalCnt} 개의 평가가 |">★ 677,813,452 개의 평가가 </em>쌓였어요.</span>
                             </section>
                             <section class="css-1k1hgyy-FooterSection e19unuxw3">
                                 <div class="css-1djzg97">

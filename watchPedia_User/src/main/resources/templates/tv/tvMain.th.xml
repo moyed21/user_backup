@@ -78,7 +78,7 @@
     </attr>
 
 
-<!--애니메이션-->
+    <!--애니메이션-->
     <attr sel="#tv-table-ani" th:remove="all-but-first">
         <attr sel="#tv-tr-ani" th:each="tv6 : ${tvs6}"  >
             <attr sel="#tv-title-ani" th:text="${tv6.tvTitle}"/>
@@ -113,9 +113,11 @@
         </attr>
     </attr>
 
+
+
     <!-- 일본 -->
     <attr sel="#tv-japan" th:remove="all-but-first">
-        <attr sel="#tv-japan-li" th:each="tv8 : ${tvs8}" >
+        <attr sel="#tv-japan-li" th:each="tv8 : ${tvs8}"  >
             <attr sel="#title-japan" th:text="${tv8.tvTitle}"/>
             <attr sel="#japan-tvThumbnail" th:src="${tv8.tvThumbnail}" />
             <!--    <attr sel="#japan-idx" th:text="${i.count}" />-->
@@ -127,3 +129,6 @@
         </attr>
     </attr>
 </thlogic>
+<!--<th:block th:each ="num : ${number.sequence(1,20)}">-->
+<!-- th:href="@{'/tv/'+${tv.tvIdx}}"-->
+<!--</th:block>-->
