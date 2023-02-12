@@ -11,7 +11,6 @@ public class Qna {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long qnaIdx;
-
     private String qnaText;
     @ManyToOne @JoinColumn(name = "qna_user_idx") private User user;
     private String qnaUserid;
